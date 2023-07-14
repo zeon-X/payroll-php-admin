@@ -1,10 +1,10 @@
 # Admin Dashboard
 
+![Screenshot 2023-07-15 at 05-49-17 Admin Create Depratment](https://github.com/zeon-X/payroll-php-admin/assets/73699852/bcde89f2-e5d3-4810-aea6-4f61c168d33a)
 ![Screenshot 2023-07-15 at 05-48-48 Admin Create Salary](https://github.com/zeon-X/payroll-php-admin/assets/73699852/65f5d6ea-c70d-40f9-9cb9-e3de4a4354d3)
 ![Screenshot 2023-07-15 at 05-48-54 https __localhost](https://github.com/zeon-X/payroll-php-admin/assets/73699852/93f47421-1662-4287-a646-26648c9cdd57)
 ![Screenshot 2023-07-15 at 05-49-04 Admin Create Depratment](https://github.com/zeon-X/payroll-php-admin/assets/73699852/d8d3ad56-08b6-4cd6-a5f1-ab0ccf64e641)
 ![Screenshot 2023-07-15 at 05-49-11 https __localhost](https://github.com/zeon-X/payroll-php-admin/assets/73699852/57a99d92-363c-45d9-b9d9-c29b1ff5dd38)
-![Screenshot 2023-07-15 at 05-49-17 Admin Create Depratment](https://github.com/zeon-X/payroll-php-admin/assets/73699852/bcde89f2-e5d3-4810-aea6-4f61c168d33a)
 ![Screenshot 2023-07-15 at 05-48-28 https __localhost](https://github.com/zeon-X/payroll-php-admin/assets/73699852/4c6ea5b0-fb23-48f5-993a-79e6d422044c)
 ![Screenshot 2023-07-15 at 05-48-35 https __localhost](https://github.com/zeon-X/payroll-php-admin/assets/73699852/781f2421-e987-4920-9bf5-072481b4128e)
 ![Screenshot 2023-07-15 at 05-48-41 https __localhost](https://github.com/zeon-X/payroll-php-admin/assets/73699852/7e79b65d-55fa-431c-a2b6-00ff9cb5bf28)
