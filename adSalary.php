@@ -8,6 +8,33 @@ if ((!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != true) || (!isset(
 
 ?>
 
+<?php
+$success = false;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include 'partials/_dbConnect.php';
+
+    $emp_id = $_GET['id'];
+    // echo $dept_id;
+
+
+    // Delete record
+    $sql =   "DELETE FROM `salary` WHERE `salary`.`emp_id` = '$emp_id' ";
+    // echo $sql;
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        $success = true;
+        $msg = "Salary Deleted";
+        echo "<p class='p-4 w-full bg-green-300'>$msg</p>";
+        header("location:adSalary.php");
+    }
+
+    mysqli_close($conn);
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
@@ -22,8 +49,7 @@ if ((!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != true) || (!isset(
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
@@ -41,6 +67,10 @@ if ((!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != true) || (!isset(
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
                 <div class=" p-10 w-full">
+
+                    <div class="mb-4">
+                        <p class="text-xl">Salary List</p>
+                    </div>
 
                     <div class="overflow-x-auto">
                         <table class="table">
@@ -78,6 +108,11 @@ if ((!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != true) || (!isset(
                                             <td>" . $salary['deduction'] . "</td>
                                             <td>" . $salary['net_salary'] . "</td>
                                             <td>" . $salary['salary_date'] . "</td>
+
+                                            <td> <form action='adSalary.php?id=" . $salary['emp_id'] . "' method='post'>
+                                            <input type='submit' name='delete' class='cursor-pointer' value='Delete'>
+                                        </form>
+                                    </td>
                                         </tr>";
                                 }
                                 mysqli_close($conn);
