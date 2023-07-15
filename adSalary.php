@@ -82,7 +82,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <th>Allowance</th>
                                     <th>Deduction</th>
                                     <th>Net Salary</th>
+
                                     <th>Salary Date</th>
+                                    <th>Project Name</th>
+                                    <th>Project Location</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -90,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <?php
                                 include 'partials/_dbConnect.php';
                                 // Prepare the SQL statement
-                                $sql = "SELECT * FROM `salary` ";
+                                $sql = "SELECT * FROM `salary` JOIN `ft_pt_work` ON salary.emp_id=ft_pt_work.emp_id JOIN `project` ON ft_pt_work.project_id=project.project_id  ";
 
                                 $result = mysqli_query($conn, $sql);
                                 $salaries = array();
@@ -108,6 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             <td>" . $salary['deduction'] . "</td>
                                             <td>" . $salary['net_salary'] . "</td>
                                             <td>" . $salary['salary_date'] . "</td>
+                                            <td>" . $salary['project_name'] . "</td>
+                                            <td>" . $salary['project_location'] . "</td>
 
                                             <td> <form action='adSalary.php?id=" . $salary['emp_id'] . "' method='post'>
                                             <input type='submit' name='delete' class='cursor-pointer' value='Delete'>
