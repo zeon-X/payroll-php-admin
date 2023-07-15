@@ -24,7 +24,7 @@ const headerContent = `
 `;
 
 const footerContent = `
-<div class=" footer p-10  text-neutral-content max-w-[1440px] mx-auto ">
+<div class=" footer p-8  text-neutral-content max-w-[1440px] mx-auto ">
             <div>
                 <span class="footer-title">Services</span>
                 <a class="link link-hover">Branding</a>

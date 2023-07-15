@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <section class="min-h-[600px] p-8 max-w-[1440px] w-full mx-auto flex justify-center items-center">
 
-        <div class="shadow max-w-[800px] mx-auto rounded-xl p-10 flex justify-center items-center gap-10">
+        <div class="shadow max-w-[800px] mx-auto rounded-xl p-8 flex justify-center items-center gap-8">
             <div>
                 <img src="   https://cdn-icons-png.flaticon.com/512/1165/1165674.png " height="156" width="156" alt="" />
                 <!-- <p class="text-center ">Login Your Account</p> -->

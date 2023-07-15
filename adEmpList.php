@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Page content here -->
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
-                <div class=" p-10  w-full">
+                <div class=" p-8  w-full">
                     <div class="mb-4">
                         <p class="text-xl">Employee List</p>
                     </div>
@@ -74,9 +74,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <!-- head -->
                             <thead>
                                 <tr>
-                                    <th>UserName</th>
+                                    <!-- <th>UserName</th> -->
                                     <th>Employee Name</th>
                                     <th>Department</th>
+                                    <th>Department Location</th>
                                     <th>Type of Work</th>
                                     <th>Hourly Rate</th>
                                     <th>Role</th>
@@ -99,10 +100,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                 foreach ($employees as $employee) {
 
+                                    // <th>" . $employee['emp_id'] . "</th>
+
                                     echo "<tr>
-                                            <th>" . $employee['emp_id'] . "</th>
+                                            
                                             <td>" . $employee['emp_name'] . "</td>
                                             <td>" . $employee['dept_name'] . "</td>
+                                            <td>" . $employee['dept_location'] . "</td>
                                             <td>" . ($employee['type_of_work'] == "ft" ? "Full Time" : "Part Time") . "</td>
                                             <td> $" . $employee['hourly_rate'] . "</td>
                                             <td>" . ($employee['user_role'] == 0 ? "User" : "Admin") . "</td>

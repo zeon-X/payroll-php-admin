@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <section class="min-h-[700px] p-8 max-w-[1440px] w-full mx-auto flex justify-center items-center">
 
-        <div class="shadow max-w-[700px] w-full mx-auto rounded-xl p-10 flex justify-center items-start gap-10">
+        <div class="shadow max-w-[700px] w-full mx-auto rounded-xl p-8 flex justify-center items-start gap-8">
 
 
             <form action="/epay/reg.php" method="POST" class="w-full flex flex-col justify-center items-center">

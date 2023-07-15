@@ -28,7 +28,7 @@ session_start();
     <main class="min-h-[400px] max-w-[1080px] mx-auto">
         <section class="my-20 py-16 flex justify-center items-center gap-0">
 
-            <div class="w-1/2 p-10">
+            <div class="w-1/2 p-8">
                 <p class="text-4xl font-semibold mb-6">Salary Tracking System</p>
                 <p class="text-lg">Employee salary tracking system automates calculations, manages attendance, ensures
                     tax

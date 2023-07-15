@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Page content here -->
 
 
-                <div class=" p-10 w-full ">
+                <div class=" p-8 w-full ">
                     <div class="mb-8">
                         <p class="text-xl">Create Project</p>
                     </div>

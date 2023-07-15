@@ -25,8 +25,7 @@ if ((!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != true) || (!isset(
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <?php
@@ -82,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Page content here -->
 
 
-                <div class=" p-10 w-full ">
+                <div class=" p-8 w-full ">
                     <div class="mb-8">
                         <p class="text-xl">Create Employee Salary</p>
                     </div>

@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Page content here -->
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
-                <div class=" p-10 w-full ">
+                <div class=" p-8 w-full ">
                     <div class="mb-8">
                         <p class="text-xl">Profile </p>
                     </div>
