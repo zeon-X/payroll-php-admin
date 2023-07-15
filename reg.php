@@ -33,14 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($result) {
                 $success = true;
                 $msg = "Registration Successfull";
+                echo "<p class='p-4 w-full bg-green-300'>$msg</p>";
             }
 
             mysqli_close($conn);
         } else {
             $msg = "Passwords dosen't matched";
+            echo "<p class='p-4 w-full bg-red-300'>$msg</p>";
         }
     } else {
-        $msg = "Email Already Registered";
+        $msg = "Username Already Registered";
+        echo "<p class='p-4 w-full bg-red-300'>$msg</p>";
     }
 }
 
@@ -103,21 +106,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-control w-full  mb-2 max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Name</span>
+                        <span class="lt text-xs">Name</span>
                     </label>
                     <input type="text" name="emp_name" class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <div class="form-control w-full  mb-2 max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Username</span>
+                        <span class="lt text-xs">Username</span>
                     </label>
                     <input type="text" name="emp_id" class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <div class="form-control w-full max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Select Department</span>
+                        <span class="lt text-xs">Select Department</span>
                     </label>
                     <select name="dept_id" class="select select-bordered">
                         <option disabled selected>Pick one</option>
@@ -148,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-control w-full max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Type of Work</span>
+                        <span class="lt text-xs">Type of Work</span>
                     </label>
                     <select name="type_of_work" class="select select-bordered">
                         <option disabled selected>Pick one</option>
@@ -160,21 +163,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-control w-full  mb-2 max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Hourly Rate</span>
+                        <span class="lt text-xs">Hourly Rate</span>
                     </label>
                     <input type="number" name="hourly_rate" class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <div class="form-control w-full  mb-4 max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Password</span>
+                        <span class="lt text-xs">Password</span>
                     </label>
                     <input type="password" name="emp_password" class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <div class="form-control w-full  mb-4 max-w-xs">
                     <label class="label">
-                        <span class="label-text text-xs">Confirm Password</span>
+                        <span class="lt text-xs">Confirm Password</span>
                     </label>
                     <input type="password" name="cpassword" class="input input-bordered w-full max-w-xs" />
                 </div>

@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($nums > 0) {
         $success = true;
         $msg = "Login Successfull";
+        echo "<p class='p-4 w-full bg-green-300'>$msg</p>";
 
         // echo $emp_row["user_role"];
 
@@ -36,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("location:empDashboard.php");
     } else {
         $msg = "Invalid Credentials";
+        echo "<p class='p-4 w-full bg-red-300'>$msg</p>";
     }
 }
 

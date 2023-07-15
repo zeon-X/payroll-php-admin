@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result) {
 
         $success = true;
-        $msg = "Registration Successfull";
+        $msg = "Update Successfull";
     }
 
     mysqli_close($conn);
@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $nums = mysqli_num_rows($resultAddress);
                     $address_row = mysqli_fetch_assoc($resultAddress);
 
-                    echo $nums;
+                    // echo $nums;
 
                     mysqli_close($conn);
 
